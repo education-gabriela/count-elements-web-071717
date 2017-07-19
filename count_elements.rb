@@ -1,4 +1,10 @@
 def count_elements(array)
-  # code goes here
+  elements = {}
+  array.each do |item|
+    elements[item] ||= 0
+
+    elements[item] += 1
+  end
+
+  elements
 end
- 
